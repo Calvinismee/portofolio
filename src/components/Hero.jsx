@@ -11,7 +11,7 @@ const Hero = () => {
         // Avatar animation
         gsap.fromTo(avatarRef.current,
             { opacity: 0, scale: 0.8 },
-            { opacity: 1, scale: 1, duration: 1.2, ease: "elastic.out(1, 0.5)" }
+            { opacity: 1, scale: 1, duration: 5, ease: "elastic.out(1, 0.5)" }
         );
 
         // Content animation - staggered for badges
