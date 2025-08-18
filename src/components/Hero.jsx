@@ -10,7 +10,7 @@ const Hero = () => {
                 <section className="flex flex-row gap-2 mb-4">
                     <div className="badge badge-outline text-xs md:text-base">IPB University</div>
                     <div className="badge badge-outline text-xs md:text-base">M0403241082</div>
-                    <div className="badge badge-outline text-xs md:text-base">Proxy Abelian</div>
+                <div className="badge badge-outline text-xs md:text-base">Proxy Abelian</div>
                 </section>
                 <h1 className="hero-h1 m-0 p-0 text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
                     JULIUS CALVIN KURNIADI

@@ -28,6 +28,10 @@ body,
   box-sizing: border-box;
 }
 
+.footer {
+  color:var(--color-text);
+  background-color: var(--brand);
+}
 
 .card {
   background-color: var(--brand);
