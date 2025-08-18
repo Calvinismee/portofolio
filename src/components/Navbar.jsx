@@ -66,10 +66,10 @@ const Navbar = () => {
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hero" className="link">Home</a></li>
+                    <li><a href="#about" className="link">About</a></li>
+                    <li><a href="#projects" className="link">Projects</a></li>
+                    <li><a href="#skills" className="link">Skills</a></li>
                 </ul>
             </div>
         </div>
