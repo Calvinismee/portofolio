@@ -33,8 +33,7 @@ const Hero = () => {
         <div ref={container} className="flex flex-col md:flex-row justify-center items-center min-h-screen w-full px-4 sm:px-12 gap-8">
             <div ref={avatarRef} className="avatar mb-6 md:mb-0">
                 <div className="w-40 h-40 md:w-56 md:h-56 max-w-60 rounded-full overflow-hidden">
-
-                    <img src="./images/me.jpg" className="object-cover w-full h-full" />
+                    <img src="./images/me.webp" className="object-cover w-full h-full" />
                 </div>
             </div>
             <div ref={contentRef} className="flex flex-col items-center md:items-start text-center md:text-left">
