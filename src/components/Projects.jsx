@@ -1,4 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ProjectList = [
     {
@@ -24,6 +29,44 @@ const Projects = () => {
     const [activeIndexes, setActiveIndexes] = useState(
         ProjectList.map(() => 0)
     );
+    
+    const container = useRef(null);
+    
+    useGSAP(() => {
+        // Heading animation
+        const heading = container.current.querySelector('h1');
+        gsap.fromTo(heading,
+            { opacity: 0, y: -30 },
+            { 
+                opacity: 1, 
+                y: 0, 
+                duration: 0.8, 
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            }
+        );
+        
+        // Cards animation with stagger effect
+        const cards = container.current.querySelectorAll('.card');
+        gsap.fromTo(cards,
+            { opacity: 0, y: 100 },
+            { 
+                opacity: 1, 
+                y: 0, 
+                stagger: 0.3,
+                duration: 0.8,
+                delay: 0.3,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: "top 70%"
+                }
+            }
+        );
+    }, { scope: container });
 
     // Handle dot click
     const handleDotClick = (projectIdx, videoIdx) => {
@@ -35,7 +78,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="component-container px-2 ">
+        <div ref={container} className="component-container px-2 ">
             <header>
                 <h1 className="text-center about-h1">Latest Work</h1>
             </header>

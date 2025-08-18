@@ -1,8 +1,33 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const Navbar = () => {
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const container = useRef(null);
+    
+    useGSAP(() => {
+        // Initial fade-in animation for the navbar
+        gsap.fromTo(container.current, 
+            { opacity: 0, y: -20 }, 
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }
+        );
+        
+        // Menu items animation
+        const menuItems = container.current.querySelectorAll('li');
+        gsap.fromTo(menuItems,
+            { opacity: 0, y: -10 },
+            { opacity: 1, y: 0, stagger: 0.1, duration: 0.3, delay: 0.2, ease: "power1.out" }
+        );
+        
+        // Logo animation
+        const logo = container.current.querySelector('.btn-ghost');
+        gsap.fromTo(logo,
+            { opacity: 0, x: -20 },
+            { opacity: 1, x: 0, duration: 0.5, ease: "back.out(1.5)" }
+        );
+    }, { scope: container });
 
     useEffect(() => {
         if (typeof window === 'undefined') return;
@@ -22,7 +47,9 @@ const Navbar = () => {
     }, [lastScrollY]);
 
     return (
-        <div className={`navbar bg-base-100 shadow-sm fixed top-0 w-full transition-transform duration-300 z-10 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div 
+            ref={container}
+            className={`navbar bg-base-100 shadow-sm fixed top-0 w-full transition-transform duration-300 z-10 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="flex-1">
                 <a href="#hero" className="btn btn-ghost text-xl">Juliusssan</a>
             </div>
