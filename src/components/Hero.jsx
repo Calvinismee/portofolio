@@ -18,7 +18,7 @@ const Hero = () => {
         const badges = contentRef.current.querySelectorAll('.badge');
         gsap.fromTo(badges,
             { opacity: 0, x: -20 },
-            { opacity: 1, x: 0, stagger: 0.2, duration: 0.6, delay: 0.5, ease: "power2.out" }
+            { opacity: 1, x: 0, stagger: 0.2, duration: 0.6, delay: 0.5, ease: "power2.out" },
         );
 
         // Heading animation
@@ -38,9 +38,9 @@ const Hero = () => {
             </div>
             <div ref={contentRef} className="flex flex-col items-center md:items-start text-center md:text-left">
                 <section className="flex flex-row gap-2 mb-4">
-                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">IPB University</div>
-                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">M0403241082</div>
-                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">Proxy Abelian</div>
+                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base opacity-0">IPB University</div>
+                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base opacity-0">M0403241082</div>
+                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base opacity-0">Proxy Abelian</div>
                 </section>
 
                 <h1 className="hero-h1 m-0 p-0 text-xs sm:text-3xl md:text-5xl lg:text-6xl font-bold">
