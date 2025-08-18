@@ -11,7 +11,7 @@ const ProjectList = [
         description: 'A minimalist web application designed to boost productivity by combining a to-do list manager with an integrated Pomodoro timer. Users can easily create, track, and organize their tasks while maintaining focus through structured work sessions. With its clean and distraction-free interface, the app helps streamline daily planning, balance work and rest, and improve overall time management.',
         type: 'Personal',
         badges: ['Fullstack','Next.js', 'React.js', 'Tailwind', 'Firebase'],
-        videos_url: ['/videos/basic_2.webm', '/videos/tomorrow.webm', '/videos/pomodoro.webm'],
+        videos_url: ['./videos/basic_2.webm', './videos/tomorrow.webm', './videos/pomodoro.webm'],
         url:'https://getitdone-theta-ebon.vercel.app/',
     },
     {
@@ -19,7 +19,7 @@ const ProjectList = [
         description: 'The official website of “IT Today 2025”, a major technology event organized by HIMALKOM IPB. It provides access to various competitions such as GameToday (Game Jam), MineToday (Data Mining & Machine Learning), HackToday (CTF for cybersecurity), and UXToday (UI/UX design). Features include registration, login (with Google integration), and a centralized dashboard to easily manage and participate in contests.',
         type: 'Group',
         badges: ['Frontend','React.js', 'Tailwind'],
-        videos_url: ['/videos/ittod.webm'],
+        videos_url: ['./videos/ittod.webm'],
         url:'https://ittoday.web.id/',
     },
 ];

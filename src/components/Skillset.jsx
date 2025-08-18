@@ -73,7 +73,7 @@ const Skillset = () => {
                     <div className="flex flex-row flex-wrap justify-center gap-6">
                         <StackIcon name="js" className="tech-icon" />
                             <img 
-                            src="/images/next.svg"
+                            src="./images/next.svg"
                             className="tech-icon"
                         />
                         <StackIcon name="react" className="tech-icon" />
@@ -86,7 +86,7 @@ const Skillset = () => {
                     <h2 className="text-center text-xl font-semibold mb-4">Other Skills</h2>
                     <div className="flex flex-row flex-wrap justify-center gap-6">
                         <img 
-                            src="/images/express.svg"
+                            src="./images/express.svg"
                             className="tech-icon"
                         />
                         <StackIcon name="nodejs" className="tech-icon" />
