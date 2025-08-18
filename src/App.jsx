@@ -10,12 +10,11 @@ import './styles/App.css';
 function App() {
   return (
     <AnimationProvider>
-      <div>
         <Navbar />
-        <div className="flex flex-col items-center w-full p-10 gap-10">
-          <div id="hero">
+        <div id="hero">
             <Hero />
           </div>
+        <div className="flex flex-col items-center w-full p-10 gap-52">
           <div id="about">
             <About />
           </div>
@@ -27,7 +26,6 @@ function App() {
           </div>
         </div>
         <Footer />
-      </div>
     </AnimationProvider>
   )
 }
