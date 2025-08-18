@@ -39,7 +39,7 @@ const Projects = () => {
             <header>
                 <h1 className="text-center about-h1">Latest Work</h1>
             </header>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {ProjectList.map((project, idx) => (
                     <div className="card bg-base-100 w-full max-w-xs sm:max-w-md mx-auto shadow-sm" key={idx}>
                         <div className="flex flex-col gap-0">
