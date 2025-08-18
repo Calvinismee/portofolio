@@ -34,16 +34,14 @@ const Hero = () => {
             <div ref={avatarRef} className="avatar mb-6 md:mb-0">
                 <div className="w-40 h-40 md:w-56 md:h-56 max-w-60 rounded-full overflow-hidden">
 
-                    <img src="./images/wife.jpg" className="object-cover w-full h-full" />
+                    <img src="./images/me.jpg" className="object-cover w-full h-full" />
                 </div>
             </div>
             <div ref={contentRef} className="flex flex-col items-center md:items-start text-center md:text-left">
                 <section className="flex flex-row gap-2 mb-4">
-                    <div className='flex gap-2'>
-                        <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">IPB University</div>
-                        <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">M0403241082</div>
-                        <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">Proxy Abelian</div>
-                    </div>
+                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">IPB University</div>
+                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">M0403241082</div>
+                    <div className="badge badge-outline text-xs p-5 md:p-3 md:text-base">Proxy Abelian</div>
                 </section>
 
                 <h1 className="hero-h1 m-0 p-0 text-xs sm:text-3xl md:text-5xl lg:text-6xl font-bold">
