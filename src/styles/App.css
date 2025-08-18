@@ -35,10 +35,21 @@ body,
 
 .about-h1 {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: x-large;
+  font-size: xxx-large;
   font-weight: 700;
   text-shadow: 0 0 16px gray,
     0 4px 32px #cdcdd4;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: large;
+}
+
+.project:hover {
+  filter:blur(60%);
 }
 
 .hero-h1 {
