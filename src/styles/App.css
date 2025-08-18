@@ -48,8 +48,9 @@ body,
   font-size: large;
 }
 
-.project:hover {
-  filter:blur(60%);
+.tech-icon {
+  width: 100px;
+  height: 100px;
 }
 
 .hero-h1 {

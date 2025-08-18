@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Skillset from './components/Skillset';
 import './styles/App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Skillset />
       <p className="read-the-docs">
         Balls
       </p>

@@ -35,7 +35,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="component-container px-2">
+        <div className="component-container px-2 ">
             <header>
                 <h1 className="text-center about-h1">Latest Work</h1>
             </header>
