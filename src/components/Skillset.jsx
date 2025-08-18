@@ -91,10 +91,6 @@ const Skillset = () => {
                         />
                         <StackIcon name="nodejs" className="tech-icon" />
                         <StackIcon name="git" className="tech-icon" />
-                        <img 
-                            src="/images/py.svg"
-                            className="tech-icon"
-                        />
                     </div>
                 </div>
             </div>
