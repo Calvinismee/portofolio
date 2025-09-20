@@ -99,6 +99,7 @@ const Projects = () => {
                                                 <video
                                                     autoPlay
                                                     loop
+                                                    muted
                                                     src={video_url}
                                                     className="w-full h-full rounded transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
                                                 />
