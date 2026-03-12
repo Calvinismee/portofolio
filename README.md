@@ -31,15 +31,13 @@ To publish the project to GitHub Pages, follow these steps:
    - Go to your repository on GitHub.
    - Click on **Settings**.
    - Scroll down to the **Pages** section.
-   - Under **Source**, select the branch to deploy (usually `gh-pages`) and click **Save**.
+   - Under **Source**, select the branch to deploy : `gh-pages` and click **Save**.
 
 2. **Deploy the built output:**  
-   Assuming your build output is in the `dist/` folder, run:
    ```bash
-   git add dist
-   git commit -m "Deploying to GitHub Pages"
-   git subtree push --prefix dist origin gh-pages
+   npm run deploy
    ```
+   `dist` content is automatically copied to `gh-pages` branch
 
 Now your project should be live at `https://yourusername.github.io/portofolio/`.
 
