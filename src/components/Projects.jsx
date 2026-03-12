@@ -7,20 +7,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ProjectList = [
     {
-        title: 'Get It Done',
-        description: 'A minimalist web application designed to boost productivity by combining a to-do list manager with an integrated Pomodoro timer. Users can easily create, track, and organize their tasks while maintaining focus through structured work sessions. With its clean and distraction-free interface, the app helps streamline daily planning, balance work and rest, and improve overall time management.',
-        type: 'Personal',
-        badges: ['Fullstack','Next.js', 'React.js', 'Tailwind', 'Firebase'],
-        videos_url: ['./videos/basic_2.webm', './videos/tomorrow.webm', './videos/pomodoro.webm'],
-        url:'https://getitdone-theta-ebon.vercel.app/',
+        title: 'Himalkom IPB ',
+        description: 'A web platform for the Computer Science Student Association of IPB University that provides information about organizational profiles, communities, programs, events, and student activities. The website serves as a central hub for communication, news, and resources for Computer Science students and the broader academic community.',
+        type: 'Organization',
+        badges: ['Frontend','React.js', 'Tailwind'],
+        videos_url: ['./videos/hima/1.webm', './videos/hima/2.webm', './videos/hima/3.webm', './videos/hima/4.webm', './videos/hima/5.webm'],
+        url:'https://www.himalkom-ipb.com/',
     },
     {
         title: 'IT-Today 2025',
         description: 'The official website of “IT Today 2025”, a major technology event organized by HIMALKOM IPB. It provides access to various competitions such as GameToday (Game Jam), MineToday (Data Mining & Machine Learning), HackToday (CTF for cybersecurity), and UXToday (UI/UX design). Features include registration, login (with Google integration), and a centralized dashboard to easily manage and participate in contests.',
-        type: 'Group',
+        type: 'Part Time',
         badges: ['Frontend','React.js', 'Tailwind'],
-        videos_url: ['./videos/ittod.webm'],
+        videos_url: ['./videos/ittod/ittod.webm'],
         url:'https://ittoday.web.id/',
+    },
+    {
+        title: 'Penjurisite',
+        description: 'A web application designed to provide problems reference to study Algorithm and Programming.',
+        type: 'Project Contribution',
+        badges: ['Full Stack', 'Next.js','React.js', 'Tailwind', 'Supabase'],
+        videos_url: ['./videos/penjuri/penjuri.webm'],
+        url:'https://www.penjuri.site/',
+    },
+    {
+        title: 'Get It Done',
+        description: 'A minimalist web application designed to boost productivity by combining a to-do list manager with an integrated Pomodoro timer. Users can easily create, track, and organize their tasks while maintaining focus through structured work sessions. With its clean and distraction-free interface, the app helps streamline daily planning, balance work and rest, and improve overall time management.',
+        type: 'Personal',
+        badges: ['Fullstack','Next.js', 'React.js', 'Tailwind', 'Firebase'],
+        videos_url: ['./videos/getitdone/basic_2.webm', './videos/getitdone/tomorrow.webm', './videos/getitdone/pomodoro.webm'],
+        url:'https://getitdone-theta-ebon.vercel.app/',
     },
 ];
 
@@ -80,7 +96,7 @@ const Projects = () => {
     return (
         <div ref={container} className="component-container px-2 ">
             <header>
-                <h1 className="text-center about-h1">Latest Work</h1>
+                <h1 className="text-center about-h1">Projects </h1>
             </header>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {ProjectList.map((project, idx) => (
